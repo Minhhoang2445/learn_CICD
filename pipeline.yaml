@@ -1,0 +1,11 @@
+name: test_cicd
+on:
+ push:
+    branches:
+      - main
+jobs:
+ test_job:
+   runs-on: ubuntu-latest
+   steps:
+     - name: PRINT HELLO WORLD
+       run: echo "HELLO WORLD"
