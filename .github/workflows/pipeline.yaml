@@ -1,4 +1,4 @@
-name: test_cicd
+name: TEST_MERGE
 on:
   push:
     branches:
@@ -10,5 +10,5 @@ jobs:
  test_job:
    runs-on: ubuntu-latest
    steps:
-     - name: PRINT HELLO WORLD
-       run: echo "HELLO WORLD"
+     - name: PRINT IF MERGE IS SUCCESSFUL
+       run: echo "SUCCESS"
